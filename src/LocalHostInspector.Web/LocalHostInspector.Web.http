@@ -1,0 +1,6 @@
+@LocalHostInspector.Web_HostAddress = http://localhost:5233
+
+GET {{LocalHostInspector.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

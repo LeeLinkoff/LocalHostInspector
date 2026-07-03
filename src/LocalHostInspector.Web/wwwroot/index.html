@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalHost Inspector</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>LocalHost Inspector</h1>
+            <p class="subtitle">
+                Diagnose why a hostname resolved to your local machine.
+            </p>
+        </header>
+
+        <section class="card">
+            <h2>Request</h2>
+            <div class="grid">
+                <div class="label">URL</div>
+                <div id="url" class="value">Loading...</div>
+                <div class="label">Host</div>
+                <div id="host" class="value">Loading...</div>
+                <div class="label">Conclusion</div>
+                <div id="conclusion" class="value conclusion">Analyzing...</div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Evidence</h2>
+            <ul id="evidence" class="evidence-list">
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Hosts File</h2>
+            <pre id="hostsFile"></pre>
+        </section>
+
+        <section class="card">
+            <h2>Web Server</h2>
+            <pre id="webServer"></pre>
+        </section>
+
+        <section class="card">
+
+            <h2>Raw Output</h2>
+
+
+            <details open>
+                <summary>System DNS</summary>
+                <pre id="systemDns"></pre>
+            </details>
+
+            <details>
+                <summary>Google Public DNS</summary>
+                <pre id="googleDns"></pre>
+            </details>
+
+            <details>
+                <summary>Cloudflare Public DNS</summary>
+                <pre id="cloudflareDns"></pre>
+            </details>
+
+
+            <details>
+                <summary>Authoritative DNS Provider</summary>
+                <pre id="authoritativeProvider"></pre>
+            </details>
+
+            <details>
+                <summary>Authoritative Name Servers</summary>
+                <pre id="authoritativeNameServers"></pre>
+            </details>
+
+            <details>
+                <summary>Authoritative DNS</summary>
+                <pre id="authoritativeDns"></pre>
+            </details>
+
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

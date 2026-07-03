@@ -1,0 +1,154 @@
+﻿/* ----------------------------------------------------------
+   LocalHost Inspector
+   Modern Light Theme
+----------------------------------------------------------- */
+
+:root {
+    --background: #f4f7fb;
+    --surface: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --primary: #2563eb;
+    --primary-light: #dbeafe;
+    --border: #e5e7eb;
+    --success: #16a34a;
+    --warning: #ca8a04;
+    --danger: #dc2626;
+    --shadow: 0 8px 30px rgba(0,0,0,.08);
+    --radius: 12px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1200px,95%);
+    margin: 40px auto;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: var(--primary);
+}
+
+.subtitle {
+    margin-top: 6px;
+    color: var(--muted);
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+    .card h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: var(--primary);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 10px;
+    }
+
+.grid {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 16px;
+}
+
+.label {
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.value {
+    word-break: break-word;
+}
+
+.conclusion {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--success);
+}
+
+.evidence-list {
+    margin: 0;
+    padding-left: 22px;
+}
+
+    .evidence-list li {
+        margin-bottom: 10px;
+    }
+
+details {
+    margin-bottom: 18px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+summary {
+    cursor: pointer;
+    padding: 12px 16px;
+    font-weight: 600;
+    background: var(--primary-light);
+    color: var(--primary);
+    user-select: none;
+}
+
+    summary:hover {
+        background: #c9defd;
+    }
+
+pre {
+    margin: 0;
+    padding: 16px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: .90rem;
+    background: #fcfcfc;
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .label {
+        margin-top: 8px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        width: 98%;
+    }
+}
